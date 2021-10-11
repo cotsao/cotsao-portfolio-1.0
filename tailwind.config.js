@@ -43,6 +43,9 @@ module.exports = {
           "800": "#868C99",
           "900": "#6C7380"
         }
+      },
+      gridTemplateColumns: {
+       'card': 'repeat(auto-fill, minmax(300px, 1fr))'
       }
     }
   }

@@ -27,7 +27,21 @@
     <div
       class="fixed bottom-0 flex-col items-center hidden ml-12 side-bar lg:flex"
     >
-      <div>df</div>
+      <svg
+        aria-hidden="true"
+        focusable="false"
+        data-prefix="fab"
+        data-icon="github"
+        class="svg-inline--fa fa-github"
+        role="img"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 496 512"
+      >
+        <path
+          fill="currentColor"
+          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+        ></path>
+      </svg>
       <div>dfs</div>
     </div>
     <div
@@ -107,7 +121,9 @@
                     that can be shared with others.
                   </p>
                 </div>
-                <ul class="flex justify-between mt-3 lg:w-3/4 lg:ml-auto lg:mr-0 ">
+                <ul
+                  class="flex justify-between mt-3 lg:w-3/4 lg:ml-auto lg:mr-0 "
+                >
                   <li>React</li>
                   <li>MongoDB</li>
                   <li>Auth0</li>
@@ -129,7 +145,9 @@
               />
 
               <div class="lg:text-left grid-content-left">
-                <h3 class="pt-6 text-2xl text-center lg:text-left lg:pt-0">Movio</h3>
+                <h3 class="pt-6 text-2xl text-center lg:text-left lg:pt-0">
+                  Movio
+                </h3>
                 <div
                   class="px-4 py-4 mt-3 rounded-lg lg:w-full bg-dove-gray-800"
                 >
@@ -148,7 +166,6 @@
                   <li class="mr-6">EJS</li>
                   <li class="mr-6">Node.js</li>
                 </ul>
-               
 
                 <ul class="flex justify-around lg:justify-start">
                   <li class="mr-6">link1</li>
@@ -159,8 +176,141 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section id="project-grid" class="lg:mx-24 md:mx-16">
         <h2 class="numbered-heading lg:text-3xl">Other Projects</h2>
+        <div class="grid items-center gap-5 grid-cols-card ">
+          <div class="relative project-card ">
+            <div
+              class="absolute flex items-center justify-center overflow-hidden duration-500 ease-in-out transform rounded-lg box top-3 left-3 right-3 bottom-3 hover:-translate-y-8"
+            >
+              <div class="p-4 content">
+                <h2 class="absolute">01</h2>
+                <h3 class="mb-2 text-xl font-bold leading-tight text-iron-400 ">
+                  My CapyPal
+                </h3>
+                <p class="mr-2 text-iron-600">
+                  Tamogotchi-style browser game. Feed and play with your pet
+                  through buttons or an interactive typing game.
+                </p>
+                <ul class="flex mt-4 text-iron-700">
+                  <li class="mr-2">HTML</li>
+                  <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li>
+                </ul>
+                <ul class="absolute flex justify-end bottom-4 right-4">
+                  <li class="ml-4">GH</li>
+                  <li class="ml-4"> DP</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative project-card ">
+            <div
+              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
+            >
+              <div class="p-4 content">
+                <h2 class="absolute">01</h2>
+                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
+                  My CapyPal
+                </h3>
+                <p class="mr-2 text-iron-600">
+                  Tamogotchi-style browser game. Feed and play with your pet
+                  through buttons or an interactive typing game.
+                </p>
+                <ul class="flex mt-4 text-iron-700">
+                  <li class="mr-2">HTML</li>
+                  <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative project-card ">
+            <div
+              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
+            >
+              <div class="p-4 content">
+                <h2 class="absolute">01</h2>
+                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
+                  My CapyPal
+                </h3>
+                <p class="mr-2 text-iron-600">
+                  Tamogotchi-style browser game. Feed and play with your pet
+                  through buttons or an interactive typing game.
+                </p>
+                <ul class="flex mt-4 text-iron-700">
+                  <li class="mr-2">HTML</li>
+                  <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative project-card ">
+            <div
+              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
+            >
+              <div class="p-4 content">
+                <h2 class="absolute">01</h2>
+                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
+                  My CapyPal
+                </h3>
+                <p class="mr-2 text-iron-600">
+                  Tamogotchi-style browser game. Feed and play with your pet
+                  through buttons or an interactive typing game.
+                </p>
+                <ul class="flex mt-4 text-iron-700">
+                  <li class="mr-2">HTML</li>
+                  <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative project-card ">
+            <div
+              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
+            >
+              <div class="p-4 content">
+                <h2 class="absolute">01</h2>
+                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
+                  My CapyPal
+                </h3>
+                <p class="mr-2 text-iron-600">
+                  Tamogotchi-style browser game. Feed and play with your pet
+                  through buttons or an interactive typing game.
+                </p>
+                <ul class="flex mt-4 text-iron-700">
+                  <li class="mr-2">HTML</li>
+                  <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="relative project-card ">
+            <div
+              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
+            >
+              <div class="p-4 content">
+                <h2 class="absolute">01</h2>
+                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
+                  My CapyPal
+                </h3>
+                <p class="mr-2 text-iron-600">
+                  Tamogotchi-style browser game. Feed and play with your pet
+                  through buttons or an interactive typing game.
+                </p>
+                <ul class="flex mt-4 text-iron-700">
+                  <li class="mr-2">HTML</li>
+                  <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="numbered-heading lg:text-3xl">Contact</section>
     </main>
@@ -218,7 +368,6 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 .grid-image-left {
   grid-area: 1 / 1 / -1 / 8;
@@ -233,14 +382,44 @@ export default {};
 .grid-image-right {
   grid-area: 1 / -8 / -1 / -1;
 }
-@media screen and (max-width: 600px) {
-  .web-project::after{
-  content:"";
-  display: block;
+.project-card {
   width: 100%;
-  height: 1px;
-  background-color:white;
-  margin: 0.5rem 0 1rem 0;
+  aspect-ratio: 1.3 / 1;
+
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+
+  transition: 0.5s;
+  z-index: 3;
 }
+.box {
+  background: #2a2b2f;
+}
+.project-card .box .content h2 {
+  top: -1rem;
+  right: 1rem;
+  font-size: 6rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+@media screen and (max-width: 600px) {
+  .web-project::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 0.5rem 0 1rem 0;
+  }
 }
 </style>
