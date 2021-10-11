@@ -1,0 +1,23 @@
+{
+  "name": "threejs-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.15.1",
+    "gsap": "^3.8.0",
+    "nuxt": "^2.15.7",
+    "orbit-controls-es6": "^2.0.1",
+    "three": "^0.126.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/google-fonts": "^1.3.0",
+    "@nuxtjs/tailwindcss": "^4.2.0",
+    "postcss": "^8.3.5"
+  }
+}
