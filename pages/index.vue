@@ -3,24 +3,24 @@
     <div id="app">
       <div
         id="container"
-        class="absolute text-white text-center w-full "
+        class="absolute w-full text-center text-white "
         style="top:50%; transform: translate(-50%,-50%); left:50%; z-index: 5;"
       >
         <h1
           id="name"
-          class="font-raleway opacity-0 pointer-events-none select-none"
+          class="opacity-0 pointer-events-none select-none font-raleway"
         >
           Cody Tsao
         </h1>
         <p
           id="titles"
-          class="font-raleway opacity-0 pointer-events-none select-none"
+          class="opacity-0 pointer-events-none select-none font-raleway"
         >
           Developer | Engineer
         </p>
         <button
           id="button"
-          class="border px-8 py-4 rounded-lg font-raleway mt-8 uppercase hover:bg-white hover:text-gray-800 opacity-0 duration-300 "
+          class="px-8 py-4 mt-8 uppercase duration-300 border rounded-lg opacity-0 font-raleway hover:bg-white hover:text-gray-800 "
           style="transform: translateY(30px);"
         >
           View Work
@@ -346,27 +346,27 @@ export default {
       opacity: 1,
       duration: 2,
       y: 0,
-      delay: 2,
+      
       ease: "expo"
     });
 
     gsap.to("#titles", {
       opacity: 1,
       duration: 2,
-      delay: 2.5,
+      delay: .5,
       y: 0,
       ease: "expo"
     });
     gsap.to("#button", {
       opacity: 1,
       duration: 2,
-      delay: 2.8,
+      delay: .8,
       y: 0,
       ease: "expo"
     });
     gsap.to("#scene", {
       opacity: 0.8,
-      delay: 4,
+      delay: 2,
       duration: 2
     });
     document.querySelector("#button").addEventListener("click", event => {

@@ -5,18 +5,26 @@
         class="fixed flex items-center justify-between w-full px-6 font-raleway top-6 lg:px-12"
       >
         <!-- stagger entrance -->
-        <div class="text-mariner">
+        <div class="transform -translate-y-4 opacity-0 nav-el text-mariner">
           logo
         </div>
-        <div class="items-center justify-around hidden lg:flex">
+        <div class="items-center justify-around hidden nav-el lg:flex">
           <ol class="flex justify-around">
-            <li class="mx-3">About</li>
-            <li class="mx-3">Projects</li>
-            <li class="mx-3">Experience</li>
-            <li class="mx-3">Contact</li>
+            <li class="mx-3 transform -translate-y-4 opacity-0 nav-el">
+              About
+            </li>
+            <li class="mx-3 transform -translate-y-4 opacity-0 nav-el">
+              Projects
+            </li>
+            <li class="mx-3 transform -translate-y-4 opacity-0 nav-el">
+              Experience
+            </li>
+            <li class="mx-3 transform -translate-y-4 opacity-0 nav-el">
+              Contact
+            </li>
           </ol>
           <button
-            class="mx-3 px-3 py-1.5 border rounded-md text-mariner border-mariner"
+            class="nav-el mx-3 px-3 py-1.5 border rounded-md text-mariner border-mariner opacity-0 transform -translate-y-4"
           >
             Resume
           </button>
@@ -25,7 +33,7 @@
       </nav>
     </header>
     <div
-      class="fixed bottom-0 flex-col items-center hidden ml-12 side-bar lg:flex"
+      class="fixed bottom-0 flex-col items-center hidden ml-12 transform translate-y-4 opacity-0 side-bar lg:flex side-el"
     >
       <svg
         aria-hidden="true"
@@ -45,10 +53,10 @@
       <div>dfs</div>
     </div>
     <div
-      class="fixed bottom-0 right-0 flex-col items-center hidden mr-12 side-bar lg:flex"
+      class="fixed bottom-0 right-0 flex-col items-center hidden mr-12 transform translate-y-4 opacity-0 side-bar lg:flex side-el"
     >
       <div
-        class="pb-10 text-sm font-light tracking-widest right-text text-gray-50"
+        class="pb-10 text-sm font-light tracking-widest duration-200 ease-in-out transform right-text text-gray-50 hover:-translate-y-2 hover:text-mariner"
       >
         cotsao42@gmail.com
       </div>
@@ -59,25 +67,27 @@
         id="hero"
         class="flex flex-col items-start min-h-screen leading-normal lg:justify-center lg:mx-36 lg:my-0"
       >
-        <div><h1 class="text-mariner">Hi, my name is</h1></div>
-        <div><h2 class="text-4xl lg:text-7xl text-iron-50">Cody Tsao.</h2></div>
-        <div class="mt-2.5 lg:mt-5">
-          <h3 class="text-4xl lg:text-6xl">I build things for the web.</h3>
-        </div>
-        <div class="mt-5 lg:mt-10">
-          <p class="max-w-xl ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            quibusdam fuga, unde, optio amet tempora porro tenetur nemo, iure
-            voluptatem quos aspernatur nulla corrupti reprehenderit officiis
-            inventore et libero odit?
-          </p>
-        </div>
+        <h1 class="opacity-0 title-el text-mariner">Hi, my name is</h1>
+        <h2 class="text-4xl opacity-0 title-el lg:text-7xl text-iron-50">
+          Cody Tsao.
+        </h2>
+        <h3 class="title-el mt-2.5 lg:mt-5 text-4xl lg:text-6xl opacity-0">
+          I build things for the web.
+        </h3>
+        <p class="max-w-xl mt-5 opacity-0 title-el lg:mt-10">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+          quibusdam fuga, unde, optio amet tempora porro tenetur nemo, iure
+          voluptatem quos aspernatur nulla corrupti reprehenderit officiis
+          inventore et libero odit?
+        </p>
       </section>
-      <section class="w-full px-8 mx-auto lg:px-48 lg:py-40 lg:mb-60">
-        <h2 class="numbered-heading lg:text-3xl">About Me</h2>
+      <section
+        id="about-section"
+        class="w-full px-8 mx-auto transform translate-y-4 opacity-0 lg:px-48 lg:py-40 lg:mb-60"
+      >
+        <h2 class="numbered-heading lg:text-3xl about-section">About Me</h2>
         <div
-          id="about-section"
-          class="flex flex-col items-center justify-between w-full lg:flex-row lg:items-center"
+          class="flex flex-col items-center justify-between w-full lg:flex-row lg:items-center "
         >
           <p class=" lg:w-1/2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa
@@ -97,10 +107,10 @@
           />
         </div>
       </section>
-      <section id="web-projects" class="lg:mx-32">
-        <h2 class="numbered-heading lg:text-3xl">Web Projects</h2>
+      <section id="web-projects" class=" lg:mx-32">
+        <h2 id="web-projects-0" class="transform translate-y-4 opacity-0 numbered-heading lg:text-3xl ">Web Projects</h2>
         <ul>
-          <li class="lg:pt-10 web-project">
+          <li id="web-projects-1"  class="transform translate-y-4 opacity-0 lg:pt-10">
             <div class="flex flex-col lg:grid lg:grid-cols-12 ">
               <img
                 class="object-cover object-top w-full rounded-lg grid-image-left max-h-96"
@@ -109,7 +119,12 @@
               />
 
               <div class="py-6 lg:text-right grid-content-right lg:py-0">
-                <h3 class="text-2xl text-center lg:text-right">bookbase</h3>
+                <h3
+                id="web-projects-1-title"
+                  class="text-2xl text-center lg:text-right project-title-right"
+                >
+                  bookbase
+                </h3>
                 <div
                   class="px-4 py-4 mt-3 rounded-lg lg:w-full bg-dove-gray-800"
                 >
@@ -136,7 +151,7 @@
               </div>
             </div>
           </li>
-          <li class="lg:pt-20">
+          <li id="web-projects-2"  class="transform translate-y-4 opacity-0 lg:pt-20">
             <div class="flex flex-col lg:grid lg:grid-cols-12 ">
               <img
                 class="object-cover object-top w-full rounded-lg grid-image-right max-h-96"
@@ -145,7 +160,9 @@
               />
 
               <div class="lg:text-left grid-content-left">
-                <h3 class="pt-6 text-2xl text-center lg:text-left lg:pt-0">
+                <h3 id="web-projects-2-title"
+                  class="pt-6 text-2xl text-center lg:text-left lg:pt-0 project-title-left"
+                >
                   Movio
                 </h3>
                 <div
@@ -176,136 +193,40 @@
           </li>
         </ul>
       </section>
-      <section id="project-grid" class="lg:mx-24 md:mx-16">
-        <h2 class="numbered-heading lg:text-3xl">Other Projects</h2>
-        <div class="grid items-center gap-5 grid-cols-card ">
-          <div class="relative project-card ">
+      <section id="project-grid" class=" lg:mx-24 md:mx-16 lg:py-48">
+        <h2 class="transform translate-y-4 opacity-0 numbered-heading lg:text-3xl other-projects grid-el">Other Projects</h2>
+        <div id="vue-grid" class="grid items-center gap-5 grid-cols-card ">
+          <div
+            v-for="(project, index) in projects"
+            :key="index"
+            class="relative transform translate-y-4 opacity-0 project-card grid-el"
+            
+          >
             <div
               class="absolute flex items-center justify-center overflow-hidden duration-500 ease-in-out transform rounded-lg box top-3 left-3 right-3 bottom-3 hover:-translate-y-8"
             >
               <div class="p-4 content">
-                <h2 class="absolute">01</h2>
+                <h2 class="absolute">0{{ index }}</h2>
                 <h3 class="mb-2 text-xl font-bold leading-tight text-iron-400 ">
-                  My CapyPal
+                  {{ project.title }}
                 </h3>
                 <p class="mr-2 text-iron-600">
-                  Tamogotchi-style browser game. Feed and play with your pet
-                  through buttons or an interactive typing game.
+                  {{ project.description }}
                 </p>
                 <ul class="flex mt-4 text-iron-700">
-                  <li class="mr-2">HTML</li>
-                  <li class="mr-2">CSS</li>
-                  <li class="mr-2">Javascript</li>
+                  <li
+                    v-for="(technology, index) in project.technologies"
+                    :key="index"
+                    class="mr-2"
+                  >
+                    {{ technology }}
+                  </li>
+                  <!-- <li class="mr-2">CSS</li>
+                  <li class="mr-2">Javascript</li> -->
                 </ul>
                 <ul class="absolute flex justify-end bottom-4 right-4">
-                  <li class="ml-4">GH</li>
-                  <li class="ml-4"> DP</li>
-
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="relative project-card ">
-            <div
-              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
-            >
-              <div class="p-4 content">
-                <h2 class="absolute">01</h2>
-                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
-                  My CapyPal
-                </h3>
-                <p class="mr-2 text-iron-600">
-                  Tamogotchi-style browser game. Feed and play with your pet
-                  through buttons or an interactive typing game.
-                </p>
-                <ul class="flex mt-4 text-iron-700">
-                  <li class="mr-2">HTML</li>
-                  <li class="mr-2">CSS</li>
-                  <li class="mr-2">Javascript</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="relative project-card ">
-            <div
-              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
-            >
-              <div class="p-4 content">
-                <h2 class="absolute">01</h2>
-                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
-                  My CapyPal
-                </h3>
-                <p class="mr-2 text-iron-600">
-                  Tamogotchi-style browser game. Feed and play with your pet
-                  through buttons or an interactive typing game.
-                </p>
-                <ul class="flex mt-4 text-iron-700">
-                  <li class="mr-2">HTML</li>
-                  <li class="mr-2">CSS</li>
-                  <li class="mr-2">Javascript</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="relative project-card ">
-            <div
-              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
-            >
-              <div class="p-4 content">
-                <h2 class="absolute">01</h2>
-                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
-                  My CapyPal
-                </h3>
-                <p class="mr-2 text-iron-600">
-                  Tamogotchi-style browser game. Feed and play with your pet
-                  through buttons or an interactive typing game.
-                </p>
-                <ul class="flex mt-4 text-iron-700">
-                  <li class="mr-2">HTML</li>
-                  <li class="mr-2">CSS</li>
-                  <li class="mr-2">Javascript</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="relative project-card ">
-            <div
-              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
-            >
-              <div class="p-4 content">
-                <h2 class="absolute">01</h2>
-                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
-                  My CapyPal
-                </h3>
-                <p class="mr-2 text-iron-600">
-                  Tamogotchi-style browser game. Feed and play with your pet
-                  through buttons or an interactive typing game.
-                </p>
-                <ul class="flex mt-4 text-iron-700">
-                  <li class="mr-2">HTML</li>
-                  <li class="mr-2">CSS</li>
-                  <li class="mr-2">Javascript</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="relative project-card ">
-            <div
-              class="absolute flex items-center justify-center overflow-hidden rounded-lg box top-5 left-5 right-5 bottom-5"
-            >
-              <div class="p-4 content">
-                <h2 class="absolute">01</h2>
-                <h3 class="mb-2 text-2xl leading-tight text-iron-500">
-                  My CapyPal
-                </h3>
-                <p class="mr-2 text-iron-600">
-                  Tamogotchi-style browser game. Feed and play with your pet
-                  through buttons or an interactive typing game.
-                </p>
-                <ul class="flex mt-4 text-iron-700">
-                  <li class="mr-2">HTML</li>
-                  <li class="mr-2">CSS</li>
-                  <li class="mr-2">Javascript</li>
+                  <li class="ml-4">{{ project.github }}</li>
+                  <li class="ml-4">{{ project.demo }}</li>
                 </ul>
               </div>
             </div>
@@ -320,10 +241,141 @@
 </template>
 
 <script>
-export default {};
+import gsap from "gsap"
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.min.js" 
+
+export default {
+  data: function() {
+    return {
+      projects: [
+        {
+          title: "myCapyPal",
+          description:
+            "Tamogotchi-style browser game. Feed and play with your pet through buttons or an interactive typing game.",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        },
+        {
+          title: "example project",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        },
+        {
+          title: "example project",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        },
+        {
+          title: "example project",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        },
+        {
+          title: "example project",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        },
+        {
+          title: "example project",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        },
+        {
+          title: "example project",
+          description:
+            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
+          technologies: ["HTML", "CSS", "Javascript"],
+          github: "github",
+          demo: "demo"
+        }
+      ]
+    };
+  },
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".title-el", {
+      opacity: 1,
+      duration: 2,
+      stagger: 0.2,
+      ease: "easeInOut"
+    });
+    gsap.to(".nav-el", {
+      opacity: 1,
+      duration: 0.5,
+      delay: 1,
+      stagger: 0.1,
+      ease: "easeInOut",
+      y: 0
+    });
+    gsap.to(".side-el", {
+      opacity: 1,
+      duration: 0.5,
+      delay: 2,
+      stagger: 0.5,
+      ease: "easeInOut",
+      y: 0
+    });
+    gsap.to("#about-section", {
+      scrollTrigger: ".about-section",
+      opacity: 1,
+      duration:0.5,
+      y:0,
+      ease: "easeInOut"
+    });
+    gsap.to(".grid-el", {
+      scrollTrigger: ".other-projects",
+      opacity: 1,
+      duration:0.5,
+      y:0,
+      ease: "easeInOut",
+      stagger:0.2
+    });
+    gsap.to("#web-projects-0", {
+      scrollTrigger: "#web-projects-0",
+      opacity: 1,
+      duration:1,
+      y:0,
+      ease: "easeInOut"
+    });
+    gsap.to("#web-projects-1", {
+      scrollTrigger: "#web-projects-1-title",
+      opacity: 1,
+      duration:1,
+      y:0,
+      ease: "easeInOut"
+    });
+    gsap.to("#web-projects-2", {
+      scrollTrigger: "#web-projects-2-title",
+      opacity: 1,
+      duration:1,
+      y:0,
+      ease: "easeInOut"
+    });
+
+  }
+};
 </script>
 
 <style>
+:root {
+  counter-reset: headings;
+}
 .side-bar {
   -webkit-box-align: center;
 }
@@ -345,12 +397,13 @@ export default {};
   position: relative;
   margin: 0.625rem 0px 2.5rem;
   width: 100%;
-
+  counter-increment: headings;
   white-space: nowrap;
 }
 .numbered-heading::before {
-  content: "00. ";
+  content: "0" counter(headings) ". ";
   color: #226ec3;
+  margin-right: 0.5rem;
 }
 .numbered-heading::after {
   content: "";
@@ -361,6 +414,24 @@ export default {};
   height: 1px;
   margin-left: 20px;
   background-color: white;
+}
+.project-title-right::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: #226ec3;
+  width: clamp(8rem, 25%, 20rem);
+  margin-left: auto;
+  margin-right: 0;
+}
+.project-title-left::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  background-color: #226ec3;
+  width: clamp(8rem, 25%, 20rem);
 }
 
 .grid-content-right {
@@ -412,7 +483,7 @@ export default {};
   height: 100%;
   background: rgba(255, 255, 255, 0.03);
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .web-project::after {
     content: "";
     display: block;
@@ -420,6 +491,24 @@ export default {};
     height: 1px;
     background-color: white;
     margin: 0.5rem 0 1rem 0;
+  }
+  .project-title-right::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    background-color: #226ec3;
+    width: clamp(8rem, 25%, 20rem);
+    margin: 0 auto;
+  }
+  .project-title-left::after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 1px;
+    background-color: #226ec3;
+    width: clamp(8rem, 25%, 20rem);
+    margin: 0 auto;
   }
 }
 </style>
