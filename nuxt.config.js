@@ -44,7 +44,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   router: {
-    base: "/cotsao.github.io/",
+    
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition;
