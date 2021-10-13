@@ -408,6 +408,11 @@ export default {
       renderer.setSize(width, height);
       camera.updateProjectionMatrix();
     });
+  },
+  head() {
+    return {
+      title: "Cody Tsao"
+    };
   }
 };
 </script>

@@ -43,7 +43,7 @@
               <li
                 class="mx-3 transform -translate-y-4 opacity-0 nav-el link-el"
               >
-                Smaller Projects
+                Mini Projects
               </li>
             </nuxt-link>
             <nuxt-link :to="{ path: '/about', hash: '#contact' }">
@@ -54,11 +54,13 @@
               </li>
             </nuxt-link>
           </ol>
-          <button
+          <a
+            href="https://docs.google.com/document/d/1I-MzT3covak9XmIVpVtssGfk4beuvzxNZHRswjAUuxk/edit?usp=sharing"
+            target="_blank"
             class="nav-el mx-3 px-3 py-1.5 border rounded-md text-mariner border-mariner opacity-0 transform -translate-y-4 duration-300 ease-in-out hover:text-mariner-400 hover:border-mariner-400 "
           >
             Resume
-          </button>
+          </a>
         </div>
         <div class="lg:hidden">
           <svg
@@ -90,7 +92,7 @@
             </nuxt-link>
             <nuxt-link :to="{ path: '/about', hash: '#project-grid' }">
               <li v-on:click="hide = !hide" class="text-dove-gray">
-                Smaller Projects
+                Mini Projects
               </li>
             </nuxt-link>
             <nuxt-link :to="{ path: '/about', hash: '#contact' }">
@@ -105,51 +107,57 @@
     <div
       class="fixed bottom-0 flex-col items-center hidden ml-12 transform translate-y-4 opacity-0 side-bar lg:flex side-el"
     >
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        data-prefix="fab"
-        data-icon="github"
-        class="w-6 mb-6 duration-300 ease-in-out transform svg-inline--fa fa-github hover:text-mariner hover:rotate-12"
-        role="img"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 496 512"
-      >
-        <path
-          fill="currentColor"
-          d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
-        ></path>
-      </svg>
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        data-prefix="fab"
-        data-icon="linkedin"
-        class="w-6 mb-6 duration-300 ease-in-out transform svg-inline--fa fa-linkedin hover:text-mariner hover:rotate-12"
-        role="img"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 448 512"
-      >
-        <path
-          fill="currentColor"
-          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-        ></path>
-      </svg>
-      <svg
-        aria-hidden="true"
-        focusable="false"
-        data-prefix="fab"
-        data-icon="twitter"
-        class="w-6 mb-6 duration-300 ease-in-out transform svg-inline--fa fa-twitter hover:text-mariner hover:rotate-12"
-        role="img"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <path
-          fill="currentColor"
-          d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"
-        ></path>
-      </svg>
+      <a href="https://github.com/cotsao" target="_blank">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="github"
+          class="w-6 mb-6 duration-300 ease-in-out transform svg-inline--fa fa-github hover:text-mariner hover:rotate-12"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 496 512"
+        >
+          <path
+            fill="currentColor"
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/cody-t/" target="_blank">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="linkedin"
+          class="w-6 mb-6 duration-300 ease-in-out transform svg-inline--fa fa-linkedin hover:text-mariner hover:rotate-12"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <path
+            fill="currentColor"
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+          ></path>
+        </svg>
+      </a>
+      <a href="https://twitter.com/Suldrun42" target="_blank">
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          data-prefix="fab"
+          data-icon="twitter"
+          class="w-6 mb-6 duration-300 ease-in-out transform svg-inline--fa fa-twitter hover:text-mariner hover:rotate-12"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="currentColor"
+            d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"
+          ></path>
+        </svg>
+      </a>
     </div>
     <div
       class="fixed bottom-0 right-0 flex-col items-center hidden mr-12 transform translate-y-4 opacity-0 side-bar lg:flex side-el"
@@ -174,10 +182,8 @@
           I build things for the web.
         </h3>
         <p class="max-w-xl mt-5 opacity-0 title-el lg:mt-10">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-          quibusdam fuga, unde, optio amet tempora porro tenetur nemo, iure
-          voluptatem quos aspernatur nulla corrupti reprehenderit officiis
-          inventore et libero odit?
+          I'm a software engineer with a passion for building cool stuff.
+          Currently looking for an opportunity to build cool stuff for money.
         </p>
       </section>
       <section
@@ -190,25 +196,25 @@
           About Me
         </h2>
         <div
-          class="flex flex-col items-center justify-between w-full lg:flex-row lg:items-center "
+          class="flex flex-col items-center justify-between w-full lg:flex-row lg:items-center lg:justify-start"
         >
           <p
             id="about-start"
-            class="transform translate-y-4 opacity-0 lg:w-1/2 about-section"
+            class="leading-6 transform translate-y-4 opacity-0 lg:w-1/3 about-section"
           >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa
-            laudantium nam dolore hic. Dignissimos voluptates nostrum obcaecati
-            adipisci minus odio velit laborum quas dicta dolorem repudiandae
-            dolore, sit animi? Lorem ipsum dolor sit, amet consectetur
-            adipisicing elit. Fugit, dolore error cum numquam tempore sunt
-            aliquam nihil quibusdam, ipsam eos rerum dolor eveniet sint
-            repellendus nulla voluptate sequi culpa dolorum. Lorem ipsum dolor
-            sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam
-            dolore hic.
+            I'm Cody, a multidisciplinary developer with a current focus in
+            developing interactive and acccesible experiences on the front-end.
+            I am a strategic thinker by nature who enjoys formulating clean and
+            creative solutions to complex problems. <br />
+            <br>
+            When I'm not at the computer developing a new project, you can find me at the computer
+            playing a game, or at the computer watching a show. Hoping to
+            leverage my crippling fear of all things vitamin-D to enhance my
+            skills as a developer.
           </p>
           <img
-            class="object-cover h-auto mt-4 transform translate-y-4 rounded-lg opacity-0 lg:mt-0 lg:w-1/3 about-section"
-            src="data:image/png;base64,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"
+            class="object-cover h-auto mt-4 transform translate-y-4 rounded-lg opacity-0 lg:mt-0 lg:w-1/3 about-section lg:mx-24"
+            src="~/assets/images/me.png"
             alt=""
           />
         </div>
@@ -251,16 +257,51 @@
                   </p>
                 </div>
                 <ul
-                  class="flex justify-between mt-3 lg:w-3/4 lg:ml-auto lg:mr-0 "
+                  class="flex justify-between mt-3 lg:w-3/4 lg:ml-auto lg:mr-0 text-iron-700 "
                 >
                   <li>React</li>
                   <li>MongoDB</li>
                   <li>Auth0</li>
                   <li>OpenLibrary-API</li>
                 </ul>
-                <ul class="flex justify-around lg:justify-end">
-                  <li class="ml-6">link1</li>
-                  <li class="ml-6">link2</li>
+                <ul class="flex justify-around mt-3 lg:justify-end">
+                  <a
+                    href="https://github.com/cotsao/bookbase-frontend"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="github"
+                      class="w-6 mx-4 duration-300 transform text-iron hover:text-mariner hover:rotate-12 svg-inline--fa fa-github"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://blooming-savannah-22309.herokuapp.com"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="up-right-from-square"
+                      class="w-6 duration-300 transform text-iron hover:text-mariner hover:rotate-12 svg-inline--fa fa-up-right-from-square"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"
+                      ></path></svg
+                  ></a>
                 </ul>
               </div>
             </div>
@@ -296,15 +337,50 @@
                   </p>
                 </div>
 
-                <ul class="flex mt-3">
+                <ul class="flex mt-3 text-iron-700">
                   <li class="mr-6">MongoDB</li>
                   <li class="mr-6">EJS</li>
                   <li class="mr-6">Node.js</li>
                 </ul>
 
-                <ul class="flex justify-around lg:justify-start">
-                  <li class="mr-6">link1</li>
-                  <li class="mr-6">link2</li>
+                <ul class="flex justify-around my-2 lg:justify-start">
+                  <a
+                    href="https://github.com/cotsao/project-one-movies"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="github"
+                      class="w-6 duration-300 transform text-iron hover:text-mariner hover:rotate-12 svg-inline--fa fa-github"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    href="https://sei-706-project-one-cotsao.herokuapp.com"
+                    target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="up-right-from-square"
+                      class="w-6 mx-4 duration-300 transform text-iron hover:text-mariner hover:rotate-12 svg-inline--fa fa-up-right-from-square"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"
+                      ></path></svg
+                  ></a>
                 </ul>
               </div>
             </div>
@@ -315,7 +391,7 @@
         <h2
           class="transform translate-y-4 opacity-0 numbered-heading lg:text-3xl other-projects grid-el"
         >
-          Other Projects
+          Mini Projects
         </h2>
         <div id="vue-grid" class="grid items-center gap-5 grid-cols-card ">
           <div
@@ -346,16 +422,72 @@
                   <li class="mr-2">Javascript</li> -->
                 </ul>
                 <ul class="absolute flex justify-end bottom-4 right-4">
-                  <li class="ml-4">{{ project.github }}</li>
-                  <li class="ml-4">{{ project.demo }}</li>
+                  <a :href="project.github" target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fab"
+                      data-icon="github"
+                      class="w-6 mx-4 duration-300 transform text-iron hover:text-mariner hover:rotate-12 svg-inline--fa fa-github"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 496 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a :href="project.demo" target="_blank"
+                    ><svg
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="up-right-from-square"
+                      class="w-6 duration-300 transform text-iron hover:text-mariner hover:rotate-12 svg-inline--fa fa-up-right-from-square"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M384 320c-17.67 0-32 14.33-32 32v96H64V160h96c17.67 0 32-14.32 32-32s-14.33-32-32-32L64 96c-35.35 0-64 28.65-64 64V448c0 35.34 28.65 64 64 64h288c35.35 0 64-28.66 64-64v-96C416 334.3 401.7 320 384 320zM488 0H352c-12.94 0-24.62 7.797-29.56 19.75c-4.969 11.97-2.219 25.72 6.938 34.88L370.8 96L169.4 297.4c-12.5 12.5-12.5 32.75 0 45.25C175.6 348.9 183.8 352 192 352s16.38-3.125 22.62-9.375L416 141.3l41.38 41.38c9.156 9.141 22.88 11.84 34.88 6.938C504.2 184.6 512 172.9 512 160V24C512 10.74 501.3 0 488 0z"
+                      ></path></svg
+                  ></a>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section id="contact" class="numbered-heading lg:text-3xl">
-        Contact
+      <section id="contact" class="w-full pt-20 text-center">
+        <h2
+          id="contact1"
+          class="flex justify-center mb-2 text-xl text-center text-mariner"
+        >
+          Contact Me
+        </h2>
+        <div class="flex flex-col items-center mb-2">
+          <h3 class="mb-4 text-4xl font-semibold text-center ">Get In Touch</h3>
+          <p class="block w-2/3 mb-8 lg:w-1/3">
+            I'm available for hire! If you have an opportunity for me, or just
+            want to ask a question, my inbox is always open.
+          </p>
+          <div class="text-center">
+            <a
+              class="py-1.5 mx-3 duration-300 ease-in-out border rounded-md px-9 hover:bg-mariner-300 text-mariner border-mariner hover:text-mariner-700 hover:border-mariner-400"
+              href="mailto:cotsao42@gmail.com"
+              >Say Hi</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        id="footer"
+        class="mt-24 mb-2 text-xs font-light text-center lg:mt-48 text-iron-700"
+      >
+        <a class="hover:text-mariner-400">Site Built by Cody Tsao</a>
       </section>
     </main>
   </div>
@@ -365,7 +497,10 @@
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.min.js";
 
+import NuxtLogo from "../components/NuxtLogo.vue";
+
 export default {
+  components: { NuxtLogo },
   data: function() {
     return {
       projects: [
@@ -374,8 +509,8 @@ export default {
           description:
             "Tamogotchi-style browser game. Feed and play with your pet through buttons or an interactive typing game.",
           technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: "demo"
+          github: "https://github.com/cotsao/My-Capy-Pal",
+          demo: "https://cotsao.github.io/My-Capy-Pal/"
         },
         {
           title: "example project",
@@ -383,7 +518,7 @@ export default {
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
           technologies: ["HTML", "CSS", "Javascript"],
           github: "github",
-          demo: "demo"
+          demo: ""
         },
         {
           title: "example project",
@@ -506,6 +641,11 @@ export default {
       y: 0,
       ease: "easeInOut"
     });
+  },
+  head() {
+    return {
+      title: "Cody Tsao"
+    };
   }
 };
 </script>
@@ -553,6 +693,14 @@ export default {
   counter-increment: headings;
   white-space: nowrap;
 }
+#contact1::before {
+  content: "0" counter(headings) ". ";
+  color: #226ec3;
+  margin-right: 0.5rem;
+}
+#contact1 {
+  counter-increment: headings;
+}
 .numbered-heading::before {
   content: "0" counter(headings) ". ";
   color: #226ec3;
@@ -586,7 +734,6 @@ export default {
   background-color: #226ec3;
   width: clamp(8rem, 25%, 20rem);
 }
-
 
 .grid-content-right {
   grid-area: 1 / 7 / -1 / -1;
