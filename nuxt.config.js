@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+  target:'static',
   head: {
     title: "threejs-portfolio",
     htmlAttrs: {
@@ -73,5 +74,6 @@ export default {
 
       return { x: 0, y: 0 };
     }
-  }
+  },
+  
 };

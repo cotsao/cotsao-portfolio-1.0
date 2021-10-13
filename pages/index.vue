@@ -346,6 +346,7 @@ export default {
       opacity: 1,
       duration: 2,
       y: 0,
+      delay:1,
       
       ease: "expo"
     });
@@ -353,20 +354,20 @@ export default {
     gsap.to("#titles", {
       opacity: 1,
       duration: 2,
-      delay: .5,
+      delay: 1.5,
       y: 0,
       ease: "expo"
     });
     gsap.to("#button", {
       opacity: 1,
       duration: 2,
-      delay: .8,
+      delay: 1.8,
       y: 0,
       ease: "expo"
     });
     gsap.to("#scene", {
       opacity: 0.8,
-      delay: 2,
+      delay: 3,
       duration: 2
     });
     document.querySelector("#button").addEventListener("click", event => {
