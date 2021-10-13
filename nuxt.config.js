@@ -1,6 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  target:'static',
+  target: "static",
   head: {
     title: "threejs-portfolio",
     htmlAttrs: {
@@ -44,6 +44,7 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   router: {
+    base: "/cotsao.github.io/",
     scrollBehavior: async (to, from, savedPosition) => {
       if (savedPosition) {
         return savedPosition;
@@ -74,6 +75,5 @@ export default {
 
       return { x: 0, y: 0 };
     }
-  },
-  
+  }
 };

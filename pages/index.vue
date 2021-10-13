@@ -376,26 +376,28 @@ export default {
       controls.reset();
       stop = true;
       gsap.to("#container", {
-        opacity: 0
+        opacity: 0,
+        duration:0.5
       });
       gsap.to("#scene", {
-        opacity: 1
+        opacity: 1,
+        duration:0.5
       });
       gsap.to(camera.position, {
         z: 25,
         ease: "power3.inOut",
-        duration: 2
+        duration: 1.5
       });
       gsap.to(camera.rotation, {
         x: 1.57,
         ease: "power3.inOut",
-        duration: 2
+        duration: 1.5
       });
       gsap.to(camera.position, {
         y: 300,
         ease: "power3.in",
-        duration: 2,
-        delay: 2,
+        duration: 1.5,
+        delay: 1.5,
         onComplete: () => {
           this.$router.push("/about");
         }

@@ -45,7 +45,8 @@ module.exports = {
         }
       },
       gridTemplateColumns: {
-       'card': 'repeat(auto-fill, minmax(300px, 1fr))'
+       'card': 'repeat(auto-fill, minmax(300px, 1fr))',
+       'skills': 'repeat(auto-fill, minmax(24px, 8fr))'
       }
     }
   }
