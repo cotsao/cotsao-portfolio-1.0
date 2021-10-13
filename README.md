@@ -1,6 +1,6 @@
 # Welcome to my Portfolio
 My first portfolio.
-Deployed here: https://cotsao.github.io/My-Capy-Pal/
+Deployed here: https://cotsao.netlify.app//
 
 ## Techonologies
 Built with Vue, Nuxt.js and Three.js, animated with GSAP.
