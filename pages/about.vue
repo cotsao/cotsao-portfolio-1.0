@@ -724,54 +724,6 @@ export default {
           technologies: ["HTML", "CSS", "Javascript"],
           github: "https://github.com/cotsao/My-Capy-Pal",
           demo: "https://cotsao.github.io/My-Capy-Pal/"
-        },
-        {
-          title: "example project",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
-          technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: ""
-        },
-        {
-          title: "example project",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
-          technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: "demo"
-        },
-        {
-          title: "example project",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
-          technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: "demo"
-        },
-        {
-          title: "example project",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
-          technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: "demo"
-        },
-        {
-          title: "example project",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
-          technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: "demo"
-        },
-        {
-          title: "example project",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe ipsa laudantium nam dolore hic. ",
-          technologies: ["HTML", "CSS", "Javascript"],
-          github: "github",
-          demo: "demo"
         }
       ],
       hide: true
