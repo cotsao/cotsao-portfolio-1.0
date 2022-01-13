@@ -23,7 +23,7 @@
           class="px-8 py-4 mt-8 uppercase duration-300 border rounded-lg opacity-0 font-raleway hover:bg-white hover:text-gray-800 "
           style="transform: translateY(30px);"
         >
-          View Work
+          About Me
         </button>
       </div>
     </div>
