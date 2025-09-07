@@ -3,17 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider nuxt",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider nuxt build", 
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.15.1",
     "gsap": "^3.8.0",
     "nuxt": "^2.15.7",
-    "orbit-controls-es6": "^2.0.1",
     "three": "^0.126.1",
     "vue-gtag": "^1.16.1"
   },
