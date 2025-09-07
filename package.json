@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_OPTIONS=--openssl-legacy-provider nuxt",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider nuxt build", 
+    "dev": "nuxt",
+    "build": "nuxt build", 
     "start": "nuxt start",
-    "generate": "NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
+    "generate": "nuxt generate",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
