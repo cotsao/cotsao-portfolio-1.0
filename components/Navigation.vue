@@ -58,13 +58,6 @@
             Contact
           </li>
         </nuxt-link>
-        <nuxt-link :to="{ path: '/solar-system' }">
-          <li
-            class="mx-3 transform -translate-y-4 opacity-0 nav-el link-el"
-          >
-            Solar System
-          </li>
-        </nuxt-link>
       </ol>
       <a
         href="https://docs.google.com/document/d/1I-MzT3covak9XmIVpVtssGfk4beuvzxNZHRswjAUuxk/edit?usp=sharing"
@@ -115,11 +108,6 @@
         <nuxt-link :to="{ path: '/about', hash: '#contact' }">
           <li v-on:click="hide = !hide" class="text-dove-gray">
             Contact
-          </li>
-        </nuxt-link>
-        <nuxt-link :to="{ path: '/solar-system' }">
-          <li v-on:click="hide = !hide" class="text-dove-gray">
-            Solar System
           </li>
         </nuxt-link>
       </ul>
