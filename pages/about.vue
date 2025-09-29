@@ -335,17 +335,17 @@
         </h2>
         <div class="mt-8 space-y-8 transform translate-y-4 opacity-0 employment-section">
           <!-- Current Position - Amazon -->
-          <div class="border-l-2 border-mariner pl-6 relative">
+          <div class="relative pl-6 border-l-2 border-mariner">
             <div class="absolute w-4 h-4 bg-mariner rounded-full -left-2.5 top-1"></div>
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
+            <div class="flex flex-col mb-2 lg:flex-row lg:items-center lg:justify-between">
               <h3 class="text-xl font-semibold text-iron-50">Field Engineer</h3>
               <span class="text-sm text-iron-600 lg:text-base">2025 - Current</span>
             </div>
-            <h4 class="text-lg text-mariner mb-2">Amazon - Frontier AI and Robotics</h4>
-            <p class="text-iron-400 mb-3">
+            <h4 class="mb-2 text-lg text-mariner">Alten - Contracted to Amazon Robotics</h4>
+            <p class="mb-3 text-iron-400">
               Engineering advanced computer vision and robotics systems using distributed hardware deployments and custom calibration solutions.
             </p>
-            <ul class="list-disc list-inside text-iron-400 space-y-1 text-sm">
+            <ul class="space-y-1 text-sm list-disc list-inside text-iron-400">
               <li>Commissioned and deployed 10 Jetson Orin AGX development kits with 4 ZED-X cameras each</li>
               <li>Developed extrinsic camera calibration system using OpenCV with camera intrinsics and IMU data integration</li>
               <li>Built end-to-end Streamlit application for distributed recording control across 10 Jetson units</li>
@@ -355,17 +355,17 @@
           </div>
           
           <!-- Stanford Robotics Center -->
-          <div class="border-l-2 border-mariner pl-6 relative">
+          <div class="relative pl-6 border-l-2 border-mariner">
             <div class="absolute w-4 h-4 bg-mariner rounded-full -left-2.5 top-1"></div>
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
+            <div class="flex flex-col mb-2 lg:flex-row lg:items-center lg:justify-between">
               <h3 class="text-xl font-semibold text-iron-50">Web Developer</h3>
               <span class="text-sm text-iron-600 lg:text-base">2024 - 2025</span>
             </div>
-            <h4 class="text-lg text-mariner mb-2">Stanford Robotics Center</h4>
-            <p class="text-iron-400 mb-3">
+            <h4 class="mb-2 text-lg text-mariner">Stanford Robotics Center</h4>
+            <p class="mb-3 text-iron-400">
               Led web development initiatives for the Stanford Robotics Center launch, creating comprehensive digital presence and optimizing user experience.
             </p>
-            <ul class="list-disc list-inside text-iron-400 space-y-1 text-sm">
+            <ul class="space-y-1 text-sm list-disc list-inside text-iron-400">
               <li>Built 50+ web pages showcasing robotics demos and facilities for center launch</li>
               <li>Performed comprehensive website audits for performance, SEO, and accessibility compliance</li>
               <li>Redesigned center website with improved usability and functionality based on leadership feedback</li>
@@ -374,17 +374,17 @@
           </div>
           
           <!-- Relay Robotics -->
-          <div class="border-l-2 border-mariner pl-6 relative">
+          <div class="relative pl-6 border-l-2 border-mariner">
             <div class="absolute w-4 h-4 bg-mariner rounded-full -left-2.5 top-1"></div>
-            <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-2">
+            <div class="flex flex-col mb-2 lg:flex-row lg:items-center lg:justify-between">
               <h3 class="text-xl font-semibold text-iron-50">Software Developer</h3>
               <span class="text-sm text-iron-600 lg:text-base">2022 - 2023</span>
             </div>
-            <h4 class="text-lg text-mariner mb-2">Relay Robotics</h4>
-            <p class="text-iron-400 mb-3">
+            <h4 class="mb-2 text-lg text-mariner">Relay Robotics</h4>
+            <p class="mb-3 text-iron-400">
               Advanced to project lead role for Building Manager application, developing innovative solutions for robot mapping and workflow automation.
             </p>
-            <ul class="list-disc list-inside text-iron-400 space-y-1 text-sm">
+            <ul class="space-y-1 text-sm list-disc list-inside text-iron-400">
               <li>Assumed project leadership for Building Manager after senior developer transition</li>
               <li>Developed 2D visualization system for lidar maps used in robotic navigation</li>
               <li>Created generic rendering system for dynamic frontend adaptation to backend entities</li>
